@@ -1,0 +1,10 @@
+C:\Users\Gabriel\source\repos\File Organizer GUI\File Organizer GUI\bin\Release\File Organizer GUI.exe.config
+C:\Users\Gabriel\source\repos\File Organizer GUI\File Organizer GUI\bin\Release\File Organizer GUI.exe
+C:\Users\Gabriel\source\repos\File Organizer GUI\File Organizer GUI\bin\Release\File Organizer GUI.pdb
+C:\Users\Gabriel\source\repos\File Organizer GUI\File Organizer GUI\obj\Release\File Organizer GUI.csprojAssemblyReference.cache
+C:\Users\Gabriel\source\repos\File Organizer GUI\File Organizer GUI\obj\Release\File_Organizer_GUI.Form1.resources
+C:\Users\Gabriel\source\repos\File Organizer GUI\File Organizer GUI\obj\Release\File_Organizer_GUI.Properties.Resources.resources
+C:\Users\Gabriel\source\repos\File Organizer GUI\File Organizer GUI\obj\Release\File Organizer GUI.csproj.GenerateResource.cache
+C:\Users\Gabriel\source\repos\File Organizer GUI\File Organizer GUI\obj\Release\File Organizer GUI.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel\source\repos\File Organizer GUI\File Organizer GUI\obj\Release\File Organizer GUI.exe
+C:\Users\Gabriel\source\repos\File Organizer GUI\File Organizer GUI\obj\Release\File Organizer GUI.pdb
