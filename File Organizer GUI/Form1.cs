@@ -8,6 +8,28 @@ namespace File_Organizer_GUI
 {
     public partial class Form1 : Form
     {
+        //Common file extensions. Too lazy to get more.
+        string[] docs = { ".doc", ".docx", ".eml", ".log", ".msg", ".odt",
+                ".pages", ".rtf", ".tex", ".txt", ".wpd", ".numbers", ".ods",
+                ".xlr", ".xls", ".xlsx", ".ppt", ".pptx", ".csv", ".pdf" };
+        string[] compressed = { ".7z", ".cbr", ".deb", ".gz", ".pak", ".pkg",
+                ".rar", ".rpm", ".tar.gz", ".xapk", ".zip", ".zipx" };
+        string[] fonts = { ".fnt", ".otf", ".ttf", ".woff", ".woff2" };
+        string[] audios = { ".aif", ".flac", ".m3u", ".m4a", ".mid", ".mp3",
+                ".ogg", ".wav", ".wma" };
+        string[] videos = { ".3gp", ".asf", ".avi", ".flv", ".m4v", ".mov",
+                ".mp4", ".mpg", ".srt", ".swf", ".ts", ".vob", ".wmv" };
+        string[] pics = { ".bmp", ".dcm", ".dds", ".djvu", ".gif", ".heic",
+                ".jpg", ".jpeg", ".png", ".psd", ".tga", ".tif",".ai", ".cdr", ".emf",
+                ".eps", ".ps", ".sketch", ".svg", ".vsdx",".3dm", ".3ds", ".blend",
+                ".dae", ".fbx", ".max", ".obj" };
+        string[] misc = { ".crdownload", ".ics", ".msi", ".nomedia",
+                ".part", ".pkpass", ".torrent", ".iso" };
+        string[] exec = { ".apk", ".app", ".bat", ".bin", ".cmd", ".com",
+                ".exe", ".ipa", ".jar", ".run", ".sh" };
+        string[] web = { ".asp", ".aspx", ".cer", ".cfm", ".csr", ".css",
+                ".html", ".js", ".json", ".jsp", ".php", ".xhtml" };
+
         //Gets the user path of whoever is currently logged in on the computer.
         static string userPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
 
@@ -83,24 +105,6 @@ namespace File_Organizer_GUI
 
         private void MoveFile(string filePath)
         {
-            //Common file extensions. Too lazy to get more.
-            string[] docs = { ".doc", ".docx", ".eml", ".log", ".msg", ".odt",
-                ".pages", ".rtf", ".tex", ".txt", ".wpd", ".numbers", ".ods",
-                ".xlr", ".xls", ".xlsx" };
-            string[] compressed = { ".7z", ".cbr", ".deb", ".gz", ".pak", ".pkg",
-                ".rar", ".rpm", ".tar.gz", ".xapk", ".zip", ".zipx" };
-            string[] fonts = { ".fnt", ".otf", ".ttf", ".woff", ".woff2" };
-            string[] audios = { ".aif", ".flac", ".m3u", ".m4a", ".mid", ".mp3",
-                ".ogg", ".wav", ".wma" };
-            string[] videos = { ".3gp", ".asf", ".avi", ".flv", ".m4v", ".mov",
-                ".mp4", ".mpg", ".srt", ".swf", ".ts", ".vob", ".wmv" };
-            string[] pics = { ".bmp", ".dcm", ".dds", ".djvu", ".gif", ".heic",
-                ".jpg", ".jpeg", ".png", ".psd", ".tga", ".tif",".ai", ".cdr", ".emf",
-                ".eps", ".ps", ".sketch", ".svg", ".vsdx",".3dm", ".3ds", ".blend",
-                ".dae", ".fbx", ".max", ".obj" };
-            string[] misc = { ".crdownload", ".ics", ".msi", ".nomedia",
-                ".part", ".pkpass", ".torrent" };
-
             //Gets the file extension
             string ext = Path.GetExtension(filePath);
             string destDir = "";
@@ -205,28 +209,6 @@ namespace File_Organizer_GUI
 
         private void ArrangeFile(string filePath)
         {
-            //Common file extensions. Too lazy to get more.
-            string[] docs = { ".doc", ".docx", ".eml", ".log", ".msg", ".odt",
-                ".pages", ".rtf", ".tex", ".txt", ".wpd", ".numbers", ".ods",
-                ".xlr", ".xls", ".xlsx", ".ppt", ".pptx", ".csv", ".pdf" };
-            string[] compressed = { ".7z", ".cbr", ".deb", ".gz", ".pak", ".pkg",
-                ".rar", ".rpm", ".tar.gz", ".xapk", ".zip", ".zipx" };
-            string[] fonts = { ".fnt", ".otf", ".ttf", ".woff", ".woff2" };
-            string[] audios = { ".aif", ".flac", ".m3u", ".m4a", ".mid", ".mp3",
-                ".ogg", ".wav", ".wma" };
-            string[] videos = { ".3gp", ".asf", ".avi", ".flv", ".m4v", ".mov",
-                ".mp4", ".mpg", ".srt", ".swf", ".ts", ".vob", ".wmv" };
-            string[] pics = { ".bmp", ".dcm", ".dds", ".djvu", ".gif", ".heic",
-                ".jpg", ".jpeg", ".png", ".psd", ".tga", ".tif",".ai", ".cdr", ".emf",
-                ".eps", ".ps", ".sketch", ".svg", ".vsdx",".3dm", ".3ds", ".blend",
-                ".dae", ".fbx", ".max", ".obj" };
-            string[] misc = { ".crdownload", ".ics", ".msi", ".nomedia",
-                ".part", ".pkpass", ".torrent", ".iso" };
-            string[] exec = { ".apk", ".app", ".bat", ".bin", ".cmd", ".com",
-                ".exe", ".ipa", ".jar", ".run", ".sh" };
-            string[] web = { ".asp", ".aspx", ".cer", ".cfm", ".csr", ".css",
-                ".html", ".js", ".json", ".jsp", ".php", ".xhtml" };
-
             //Gets the file extension and the current file directory
             string folderName = Path.GetDirectoryName(filePath);
             string ext = Path.GetExtension(filePath);
